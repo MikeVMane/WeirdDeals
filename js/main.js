@@ -5,7 +5,7 @@ let header = document.querySelector('header');
 let section = document.querySelector('section');
 
 //Step Two - create a variable to store request URL
-let requestURL = "https://jessicagilfillan.github.io/WeirdDeals/WeirdDeals.json";
+let requestURL = "https://mikevmane.github.io/WeirdDeals/js/WeirdDeals.json";
 
 // Step Three - create a new XHR object
 let request = new XMLHttpRequest();
@@ -63,9 +63,8 @@ function topProducts(jsonObj) {
     let list = document.createElement('ul');
 
     //grab the data associated with image to set the src and alt attribute
-    img.setAttribute('src', 'https://jessicagilfillan.github.io/WeirdDeals/images/' + topProducts[i].image);
+    img.setAttribute('src', 'https://mikevmane.github.io/WeirdDeals/images' + topProducts[i].image);
     img.setAttribute('alt', topProducts[i].image );
-
     h2.textContent = topProducts[i].name;
     p1.textContent = 'price: ' + topProducts[i].calories;
     p2.textContent = 'description: ' + topProducts[i].type;
