@@ -1,0 +1,62 @@
+{
+"companyName" : "Weird Deals",
+"headOffice" : "Tokyo, Japan",
+"established" : 1992,
+"active" : true,
+"topProducts" : [
+  {
+    "name" : "White Goat",
+    "price" : "$200.99",
+    "description" : "This machine turns office paper into toilet paper.",
+    "features" : [
+      "makes you toilet paper",
+      "gets rid of office paper"
+    ],
+    "image": "whitegoat.svg"
+  },
+
+  {
+    "name" : "Thanko Pollen Blocker 2",
+    "price" : "$329.49",
+    "description" : "This device allows you to work free without your allergies going off.",
+    "features" : [
+      "Blocks off pollen",
+      "Protective mask screen"
+    ],
+    "image" : "ThankoPollenBlocker2.svg"
+  },
+
+  {
+    "name" : "Human Pet House",
+    "price" : "$129.99",
+    "description" : "With this device you can sleep just like your pet.",
+    "features" : [
+      "soft cussion to sleep on",
+      "protective dome"
+    ],
+    "image" : "HumanPetHouse.svg"
+  },
+
+  {
+    "name" : "Octopus Scalp Massager",
+    "price" : "$49.99",
+    "description" : "The perfect device to help massage your head.",
+    "features" : [
+      "3 different massage speeds",
+      "flexible to fit any head"
+    ],
+    "image" : "OctopusScalpMassager.svg"
+  },
+
+  {
+    "name" : "Maikore Sweater",
+    "price" : "$34.99",
+    "description" : "The sweater that lets you show off all your cool things.",
+    "features" : [
+      "pocket to store items",
+      "plastic screen on the front"
+    ],
+    "image" : "MaikoreSweater.svg"
+    }
+  ]
+}
