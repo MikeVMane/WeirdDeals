@@ -66,8 +66,8 @@ function topProducts(jsonObj) {
     img.setAttribute('src', 'https://mikevmane.github.io/WeirdDeals/images' + topProducts[i].image);
     img.setAttribute('alt', topProducts[i].image );
     h2.textContent = topProducts[i].name;
-    p1.textContent = 'price: ' + topProducts[i].calories;
-    p2.textContent = 'description: ' + topProducts[i].type;
+    p1.textContent = 'price: ' + topProducts[i].price;
+    p2.textContent = 'description: ' + topProducts[i].description;
 
     let features = topProducts[i].features;
     for(let j = 0; j < features.length; j++ ) {
