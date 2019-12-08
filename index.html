@@ -44,7 +44,26 @@
   s.parentNode.insertBefore(px, s);
   s.parentNode.insertBefore(py, s);
 })(document, 'script', 'plmxbtn');</script>
-
+<script>
+// Initialize and add the map
+function initMap() {
+  // The location of japanLocation
+  var japanLocation = {lat: 35.682281, lng: 139.769297};
+  // The map, centered at japanLocation
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: japanLocation});
+  // The marker, positioned at japanLocation
+  var marker = new google.maps.Marker({position: japanLocation, map: map});
+}
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5o8GzOXNM-weRI4IJ74BTph5MbHbVijM&callback=initMap">
+    </script>
   </footer>
 </body>
 </html>
