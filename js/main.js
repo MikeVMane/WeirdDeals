@@ -1,28 +1,29 @@
 // JavaScript Document
+//Michael Valadao-Martins 200412941
 
-//Step One - create variables that store a reference to header and section elements
+//create variables that store a reference to header and section elements
 let header = document.querySelector('header');
 let section = document.querySelector('section');
 
-//Step Two - create a variable to store request URL
+//create a variable to store request URL
 let requestURL = "https://mikevmane.github.io/WeirdDeals/js/WeirdDeals.json";
 
-// Step Three - create a new XHR object
+//create a new XHR object
 let request = new XMLHttpRequest();
 
-//Step Four - open a new request, using the open method
+//open a new request, using the open method
 request.open('GET', requestURL);
 
-//Step Five - set up the request to accept JSON
+//set up the request to accept JSON
 
 request.responseType = 'json';
 
-//Step Six - send the request using the send method
+//send the request using the send method
 
 request.send();
 
 
-// Step Seven - adding an event handler that listens for onload event of the JSON file/object
+// adding an event handler that listens for onload event of the JSON file/object
 request.onload = function() {
   let weirdDeals = request.response;
   console.log(weirdDeals);
@@ -30,7 +31,7 @@ request.onload = function() {
   topProducts(weirdDeals);
 }
 
-// Step Eight - set up populateHeader function to fill in the header function
+//set up populateHeader function to fill in the header function
 function populateHeader(jsonObj) {
 
   // grab the company name from JSON object and then create a new element, adding text and appending to the header
@@ -39,14 +40,14 @@ function populateHeader(jsonObj) {
   headerH1.textContent = jsonObj['companyName'];
   header.appendChild(headerH1);
 
-  //grab the company info and established date and add a new paragraph to your HTML that displays this info
+  //grab the company info and established date and add a new paragraph to my HTML that displays this info
 
   let headerPara = document.createElement('p');
   headerPara.textContent = 'Head Office: ' + jsonObj['headOffice'] + ' , Established:  ' + jsonObj['established'];
   header.appendChild(headerPara);
 }
 
-// define the topflavours function to show the flavours
+// define the topProducts function to show the products
 
 function topProducts(jsonObj) {
 
