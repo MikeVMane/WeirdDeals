@@ -27,7 +27,7 @@ request.onload = function() {
   let weirdDeals = request.response;
   console.log(weirdDeals);
   populateHeader(weirdDeals);
-  topFlavours(weirdDeals);
+  topProducts(weirdDeals);
 }
 
 // Step Eight - set up populateHeader function to fill in the header function
