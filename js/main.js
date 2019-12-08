@@ -63,7 +63,7 @@ function topProducts(jsonObj) {
     let list = document.createElement('ul');
 
     //grab the data associated with image to set the src and alt attribute
-    img.setAttribute('src', 'https://mikevmane.github.io/WeirdDeals/images' + topProducts[i].image);
+    img.setAttribute('src', 'https://mikevmane.github.io/WeirdDeals/images/' + topProducts[i].image);
     img.setAttribute('alt', topProducts[i].image );
     h2.textContent = topProducts[i].name;
     p1.textContent = 'price: ' + topProducts[i].price;
