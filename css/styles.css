@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+html
+{
+	background-color: lightgrey;
+}
+
 body {
 	font-family: sans-serif;
 	font-size: 150%;
