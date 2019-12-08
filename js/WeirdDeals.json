@@ -12,7 +12,7 @@
       "makes you toilet paper",
       "gets rid of office paper"
     ],
-    "image": "whitegoat.svg"
+    "image": "whitegoat.jpg"
   },
 
   {
@@ -34,7 +34,7 @@
       "soft cussion to sleep on",
       "protective dome"
     ],
-    "image" : "HumanPetHouse.svg"
+    "image" : "HumanPetHouse.jpg"
   },
 
   {
@@ -45,7 +45,7 @@
       "3 different massage speeds",
       "flexible to fit any head"
     ],
-    "image" : "OctopusScalpMassager.svg"
+    "image" : "OctopusScalpMassager.jpg"
   },
 
   {
@@ -56,7 +56,7 @@
       "pocket to store items",
       "plastic screen on the front"
     ],
-    "image" : "MaikoreSweater.svg"
+    "image" : "MaikoreSweater.jpg"
     }
   ]
 }
